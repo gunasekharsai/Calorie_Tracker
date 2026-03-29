@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nutriscan-backend
+    runtime: node
+    buildCommand: bun install
+    startCommand: bun src/index.ts
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+ 
